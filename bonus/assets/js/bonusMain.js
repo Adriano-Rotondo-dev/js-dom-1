@@ -1,10 +1,8 @@
 //TODO: al click del bottone "lightSwitch" la lampadina dovrà "accendersi"
 //! BONUS
 //TODO: il pulsante, una volta premuto, cambierà in "spegni", riportando l'immagine originale
-//* deve funzionare in loop
-//* string.includes() potrebbe essere necessario
-//? cambio anche il colore del body con l'accensione?
-
+//* deve funzionare in loop [un toggle?]
+//* string.includes() potrebbe essere necessario [LO È]
 
 //* visualizzo in console il click del bottone
 //prima seleziono il bottone
@@ -14,7 +12,7 @@ const lightSwitchBtnEl = document.getElementById("lightSwitch"); // salvo il DOM
 const imgEl = document.getElementById("lightBulb"); // salvo il DOM node
 
 // seleziono il body per il cambio di background color
-const bgEl = document.getElementById("pageBody")
+const bgEl = document.getElementById("pageBody");
 
 //* collego al bottone il cambio di immagine della lampadina
 // applico l'event listener al bottone
@@ -29,6 +27,4 @@ lightSwitchBtnEl.addEventListener("click", function () {
     imgEl.src = "./assets/img/white_lamp.png";
     lightSwitchBtnEl.textContent = "Accendi";
   }
-
 });
-
